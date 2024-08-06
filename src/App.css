@@ -1,0 +1,48 @@
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 500px;
+	text-align: center;
+}
+
+.board {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	border: 1px solid black;
+}
+
+.cell {
+	height: 70px;
+	width: 70px;
+	border: 1px solid black;
+	background-color: lightgray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.cell:hover {
+	background-color: white;
+}
+
+.game-info {
+	margin-top: 20px;
+}
+
+.game-info > div:last-child {
+	padding: 5px;
+	font-weight: bold;
+}
+
+button {
+	margin-bottom: 5px;
+}
